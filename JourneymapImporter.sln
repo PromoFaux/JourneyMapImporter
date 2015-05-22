@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneymapImporter", "JourneymapImporter\JourneymapImporter.csproj", "{95EE6E18-E9AD-4AAD-BA0B-F26F20F16E59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95EE6E18-E9AD-4AAD-BA0B-F26F20F16E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95EE6E18-E9AD-4AAD-BA0B-F26F20F16E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95EE6E18-E9AD-4AAD-BA0B-F26F20F16E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95EE6E18-E9AD-4AAD-BA0B-F26F20F16E59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
