@@ -1,6 +1,6 @@
-﻿namespace JourneymapWaypoinImporter
+﻿namespace JourneymapImporter
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -110,7 +110,7 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "VoxelMaps Waypoint File:";
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +123,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtJourney);
             this.Controls.Add(this.txtVoxel);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Import";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,4 +143,3 @@
         private System.Windows.Forms.Label label2;
     }
 }
-

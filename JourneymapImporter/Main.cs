@@ -3,18 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace JourneymapWaypoinImporter
+namespace JourneymapImporter
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
@@ -66,7 +65,7 @@ namespace JourneymapWaypoinImporter
             string[] fileEntries = Directory.GetFiles(jmFolder, "*.json");
 
 
-           if (fileEntries != null)
+            if (fileEntries != null)
             {
                 foreach (string fileName in fileEntries)
                 {
@@ -102,32 +101,37 @@ namespace JourneymapWaypoinImporter
                 //    //ProcessDirectory(subdirectory);
 
             }
-           else
+            else
             {
                 MessageBox.Show("No JourneyMap Files in this folder! Choose another path!");
             }
         }
-     
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public class journeymapwaypoint
+    {
+        public string name { get; set; }
+        public int x { get; set; }
+        public int y { get; set; }
+        public int z { get; set; }
+        public int r { get; set; }
+        public int g { get; set; }
+        public int b { get; set; }
+        public string enable { get; set; }
+
+        public string type { get; set; }
+        public string origin { get; set; }
+        public List<string> dimensions { get; set; }
+
+
+
 
     }
 }
 
-public class journeymapwaypoint
-{
-    public string name { get; set; }
-    public int x { get; set; }
-    public int y { get; set; }
-    public int z { get; set; }
-    public int r { get; set; }
-    public int g { get; set; }
-    public int b { get; set; }
-    public string enable { get; set; }
 
-    public string type { get; set; }
-    public string origin { get; set; }
-    public List<string> dimensions { get; set; }
-
-
-
-
-}
